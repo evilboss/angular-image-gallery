@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>475BE30A-A2C7-4248-A326-9ADC5FA2A1EC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M17.6315789,20.4118199 L7.00151123,28.406237 C5.8961071,29.237564 5,28.7798906 5,27.4081191 L5,13.4155208 C5,12.0329485 5.8983057,11.5877294 7.00151123,12.4174028 L17.6315789,20.4118199 Z M21.3913043,20.4118199 L32.0213721,28.406237 C33.1267762,29.237564 34.0228833,28.7798906 34.0228833,27.4081191 L34.0228833,13.4155208 C34.0228833,12.0329485 33.1245776,11.5877294 32.0213721,12.4174028 L21.3913043,20.4118199 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="33.0228833" height="20.8219026">
+            <rect x="3" y="10" width="33.0228833" height="20.8219026" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0.0-Assets" transform="translate(-30.000000, -30.000000)">
+            <g id="img_logo" transform="translate(30.000000, 30.000000)">
+                <g id="Symbol">
+                    <use fill="#2D3035" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#73777F" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

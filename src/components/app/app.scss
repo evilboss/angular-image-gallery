@@ -1,0 +1,14 @@
+.app {
+  @include component(&); // Adds defintion for `<ig-app>` element (from /src/styles/mixins.scss)
+  display: block;
+  font-family: sans-serif;
+
+  &__logo {
+    width: 200px; 
+    height: 30px;
+    padding: 20px;
+    color: red;
+/*  background: url('./logo.svg') no-repeat center center black;*/
+    background-size: 200px auto;
+  }
+}
