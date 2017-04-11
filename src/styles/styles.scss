@@ -1,32 +1,72 @@
 @import url('https://bootswatch.com/darkly/bootstrap.min.css');
 
+$border-color: #42454a;
 body {
 }
-.navbar{
-  background-color: #2d3035;
-}
-.navbar-brand {
-  color: gray;
-  padding: 0px;
+
+p {
+  color: #686c74;
 }
 
-.navbar-brand > img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+.app-name {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  border-bottom: solid 1px $border-color;
+  a {
+    color: gray;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  img {
+    height: 100%;
+    padding: 9px;
+    width: auto;
+  }
+}
+
+.navbar {
+  border-bottom: solid 1px $border-color;
+  background-color: #2d3035;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-radius: 0px;
+
 }
 
 .sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  padding: 0;
+  border-right: solid 1px $border-color;
   background-color: #2d3035;
-  padding-bottom: 65%;
   .nav-sidebar li {
     a {
-      color: gray;
+      color: #4e5259;
+      img {
+        margin-right: 1.5em;
+      }
     }
     &.active {
       a {
         color: white;
+        img {
+          fill: blue;
+        }
       }
     }
   }
+}
+
+.well {
+  background-color: #2d3035;
 }

@@ -1,12 +1,11 @@
 <div class="main">
-	<navbar></navbar>
-	<div class="row">
-		<div class="col-sm-3 col-md-2 sidebar">
-			<sidebar></sidebar>
-		</div>
-
-		<div class="col-sm-9 col-md-10 main">
-			<ui-view></ui-view>
-		</div>
-	</div>
+  <div>
+    <div class="col-sm-3 col-md-2 sidebar">
+      <sidebar></sidebar>
+    </div>
+    <div class="col-sm-9 col-md-offset-2 col-sm-offset-3 col-md-10 main">
+      <navbar></navbar>
+      <ui-view></ui-view>
+    </div>
+  </div>
 </div>
