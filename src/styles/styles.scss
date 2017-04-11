@@ -39,6 +39,28 @@ p {
   margin-right: -15px;
   border-radius: 0px;
 
+  .col-md-3 {
+    min-height: 59px;
+    border-right: solid 1px $border-color;
+  }
+  .navbar-form {
+    input {
+      border-radius: 25px !important;
+      background-color: #1f2228;
+      color: white;
+      height: 30px;
+      margin-top: 6px;
+    }
+    .input-group-btn {
+      position: absolute;
+      right: 0;
+
+      button {
+        border: none;
+        background: transparent;
+      }
+    }
+  }
 }
 
 .sidebar {
@@ -69,4 +91,25 @@ p {
 
 .well {
   background-color: #2d3035;
+}
+
+.thumbnail {
+  background-color: #2d3035;
+  border: solid 1px black;
+  padding: 1.5em 0;
+  .content {
+    margin: auto;
+    width: 150px;
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .caption {
+      table {
+        color: #696d75;
+      }
+    }
+  }
 }
