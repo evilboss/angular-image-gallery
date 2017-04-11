@@ -1,20 +1,24 @@
 @import url('https://bootswatch.com/darkly/bootstrap.min.css');
 
 body {
-
 }
-
-.navbar-brand {
-  color: gray;
-}
-
-.navbar,
-.sidebar {
+.navbar{
   background-color: #2d3035;
 }
+.navbar-brand {
+  color: gray;
+  padding: 0px;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
 
 .sidebar {
-  margin-top: -21px;
+  background-color: #2d3035;
+  padding-bottom: 100%;
   .nav-sidebar li {
     a {
       color: gray;
