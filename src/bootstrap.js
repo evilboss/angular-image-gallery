@@ -2,6 +2,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import home from './components/home/home.html';
 import gallery from './components/gallery/gallery.html';
+import GalleryController from './components/gallery/gallery';
 
 const config = ($stateProvider, $urlRouterProvider, $locationProvider) => {
   $locationProvider.html5Mode({
@@ -19,6 +20,8 @@ const config = ($stateProvider, $urlRouterProvider, $locationProvider) => {
     .state('/gallery', {
       url: '/gallery',
       template: gallery,
+      controller: GalleryController,
+      controllerAs: 'gallery',
     });
 };
 const app = angular.module('image-gallery', [uiRouter]).config(config);

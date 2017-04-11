@@ -1,14 +1,19 @@
 <div class="app-name">
-  <a href="#"><img src="/assets/img-logo.svg"/>
-    Infinity Panel</a></div>
+	<a href="/"><img src="/assets/img-logo.svg"/>
+		Infinity Panel</a></div>
 <div>
-  <ul class="nav nav-sidebar">
-    <li><a href="/"><img src="/assets/ic-home.svg"/>Home</a></li>
-    {{console.log('test')}}
-    <li class="active"><a href="/gallery"><img src="/assets/ic-gallery.svg"/>Gallery</a>
-    </li>
-    <li><a href="#"><img src="/assets/ic-date.svg"/> Due Date</a></li>
-    <li><a href="#"><img src="/assets/ic-project.svg"/> Per Project</a></li>
-    <li><a href="#"><img src="/assets/ic-assign.svg"/> Assigned by</a></li>
-  </ul>
+	<ul class="nav nav-sidebar">
+		<li ng-class="{active:sidebar.getActiveRoute('/')}"><a href="/"><img
+			src="/assets/ic-home.svg"/>Home</a></li>
+		<li ng-class="{active:sidebar.getActiveRoute('/gallery')}"><a
+			href="/gallery"><img
+			src="/assets/ic-gallery.svg"/>Gallery</a></li>
+
+		<li ng-class="{active:sidebar.getActiveRoute('/date')}"><a href=""><img
+			src="/assets/ic-date.svg"/> Due Date</a></li>
+		<li ng-class="{active:sidebar.getActiveRoute('/project')}"><a href="#"><img
+			src="/assets/ic-project.svg"/> Per Project</a></li>
+		<li ng-class="{active:sidebar.getActiveRoute('/assign')}"><a href="#"><img
+			src="/assets/ic-assign.svg"/> Assigned by</a></li>
+	</ul>
 </div>

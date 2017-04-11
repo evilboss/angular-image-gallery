@@ -1,16 +1,14 @@
 import app from '../../bootstrap';
 import template from './main_layout.html';
-
 // components
 import '../home/home';
 import '../sidebar/sidebar';
 import '../navbar/navbar';
 import '../gallery/gallery';
 
-
 class main {
   constructor() {
-    console.log('Example component loaded');
+    this.name = 'main';
   }
 }
 
