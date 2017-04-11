@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const DEBUG = process.env.npm_lifecycle_event !== 'build';
 
@@ -78,6 +79,8 @@ const config = {
       'window.jQuery': 'jquery',
     }),
     new ExtractTextPlugin('styles/[name].[hash].css', { disable: DEBUG }),
+    new CopyWebpackPlugin([{ from: 'design/assets', to: 'assets' }]),
+
   ],
   devtool: DEBUG ? 'inline-source-map' : '',
 };
