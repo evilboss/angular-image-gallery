@@ -25,7 +25,7 @@ const config = {
   },
   module: {
     loaders: [
-      { 
+      {
         test: /\.js$/,
         loaders: ['babel', 'eslint'],
         exclude: /node_modules/,
