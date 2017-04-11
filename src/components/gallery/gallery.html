@@ -1,5 +1,8 @@
 <div class="row">
-	<div class="col-sm-6 col-md-3" ng-repeat="photo in gallery.photos">
+	{{gallery.filter}}
+	<div class="col-sm-6 col-md-3"
+
+			 ng-repeat="photo in gallery.photos | filter:{ title: gallery.getFilter(), albumId:gallery.getAlbumFilter()}|orderBy:gallery.getSortType() ">
 		<div class="thumbnail">
 			<div class="content">
 				<img ng-src="{{ photo.url }}" alt="..."/>

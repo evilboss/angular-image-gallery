@@ -1,13 +1,9 @@
 import app from '../../bootstrap';
 import template from './navbar.html';
-
-class navbar {
-  constructor() {
-    'ngInject';
-  }
-}
+import GalleryController from '../gallery/gallery';
 
 app.component('navbar', {
   template,
-  controller: navbar,
+  controller: GalleryController,
+  controllerAs: 'gallery',
 });

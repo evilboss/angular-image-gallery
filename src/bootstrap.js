@@ -24,7 +24,35 @@ const config = ($stateProvider, $urlRouterProvider, $locationProvider) => {
       controllerAs: 'gallery',
     });
 };
-const app = angular.module('image-gallery', [uiRouter]).config(config);
+const app = angular
+  .module('image-gallery', [uiRouter])
+  .config(config)
+  .service('sharedProperties', () => {
+    let filter = '';
+    let albumId = '';
+    let sortType = '';
+    return {
+      getFilter() {
+        return filter;
+      },
+      setFilter(value) {
+        filter = value;
+      },
+      setAlbumId(value) {
+        albumId = value;
+      },
+      getAlbumId() {
+        return albumId;
+      },
+      getSortType() {
+        return sortType;
+      },
+      setSortType(value) {
+        sortType = value;
+      },
+    };
+  });
+
 // Default exports contains angular module
 export default app;
 
