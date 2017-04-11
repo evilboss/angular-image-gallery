@@ -7,12 +7,15 @@ body {
 p {
   color: #686c74;
 }
-.inline{
+
+.inline {
   display: inline-block;
 }
-.v-align-middle{
+
+.v-align-middle {
   vertical-align: -webkit-baseline-middle;
 }
+
 .app-name {
   padding-left: 15px;
   padding-right: 15px;
@@ -44,7 +47,8 @@ p {
   margin-right: -15px;
   border-radius: 0px;
 
-  .col-md-3 {
+  .col-md-3,
+  .col-md-4 {
     min-height: 59px;
     border-right: solid 1px $border-color;
   }
