@@ -7,7 +7,12 @@ body {
 p {
   color: #686c74;
 }
-
+.inline{
+  display: inline-block;
+}
+.v-align-middle{
+  vertical-align: -webkit-baseline-middle;
+}
 .app-name {
   padding-left: 15px;
   padding-right: 15px;
@@ -59,6 +64,16 @@ p {
         border: none;
         background: transparent;
       }
+    }
+    .dropdown-toggle {
+      background-color: #1f2228;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 25px;
+      height: 30px;
+      width: 145px;
+      margin-top: 6px;
+
     }
   }
 }
